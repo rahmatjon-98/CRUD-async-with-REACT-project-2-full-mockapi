@@ -116,6 +116,20 @@ const Crud = () => {
 
   let [search, setsearch] = useState("");
   let [status, setstatus] = useState("");
+  let [check, setcheck] = useState("");
+
+  async function changeCheck(e) {
+    let newUser = {
+      ...e,
+      status: !e.status,
+    };
+    try {
+      await axios.put(`${api}/${e.id}`, newUser);
+      get();
+    } catch (error) {
+      console.error(error);
+    }
+  }
   return (
     <div className=" my-20">
       <h1 className="text-3xl">Отзывы о Lujo BlackJet</h1>
@@ -230,7 +244,6 @@ const Crud = () => {
         <div className="flex items-start gap-12">
           <img className="w-1/4" src={infoImg} alt="" />
           <div>
-
             <ul className="list-disc">
               <li>
                 <b>name: </b>
@@ -271,6 +284,11 @@ const Crud = () => {
                       : "bg-red-50 text-red-500"
                   }`}
                 >
+                  <input
+                    type="checkbox"
+                    onClick={() => changeCheck(e)}
+                    checked={e.status}
+                  />{" "}
                   {e.status ? "Active" : "Inactive"}
                 </span>
                 <img

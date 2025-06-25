@@ -1,7 +1,7 @@
 import "./App.css";
-import '@ant-design/v5-patch-for-react-19';
-import { unstableSetRender } from 'antd';
-import { createRoot } from 'react-dom/client';
+import "@ant-design/v5-patch-for-react-19";
+import { unstableSetRender } from "antd";
+import { createRoot } from "react-dom/client";
 
 unstableSetRender((node, container) => {
   container._reactRoot ||= createRoot(container);
@@ -58,13 +58,17 @@ function App() {
       </header>
 
       <h1 className="lg:text-[28px] w-9/10 lg:w-3/5 my-10 mx-auto">
-        Lujo BlackJet доставляет путешественников в <b>Турцию</b> и на 
+        Lujo BlackJet доставляет путешественников в <b>Турцию</b> и на
         <b> Мальдивы</b>:
       </h1>
 
       <section className="w-9/10 lg:w-6/10 m-auto my-10">
         <img className="mt-20 rounded-xl" src={img1} alt="" />
-        <img className="absolute lg:-mt-[260px] -mt-[168px] w-3/5 lg:w-auto " src={img2} alt="" />
+        <img
+          className="absolute lg:-mt-[260px] -mt-[168px] w-3/5 lg:w-auto "
+          src={img2}
+          alt=""
+        />
         <p className="text-white text-2xl lg:text-[40px] font-bold absolute -mt-16 lg:-mt-24 ml-[200px] lg:ml-[550px] ">
           Турция
         </p>
@@ -104,12 +108,20 @@ function App() {
           </div>
         </div>
 
-        <img className="absolute -z-1 -ml-5 lg:-ml-72 -mt-64" src={img5} alt="" />
+        <img
+          className="absolute -z-1 -ml-5 lg:-ml-72 -mt-64"
+          src={img5}
+          alt=""
+        />
       </section>
 
       <section className="w-9/10 lg:w-6/10 m-auto my-10">
         <img className="mt-20 rounded-xl" src={img4} alt="" />
-        <img className="absolute lg:-mt-[260px] -mt-[168px] w-3/5 lg:w-auto  " src={img3} alt="" />
+        <img
+          className="absolute lg:-mt-[260px] -mt-[168px] w-3/5 lg:w-auto  "
+          src={img3}
+          alt=""
+        />
         <p className="text-white text-2xl lg:text-[40px] font-bold absolute -mt-16 lg:-mt-24 ml-[200px] lg:ml-[550px]  ">
           Мальдивы
         </p>
@@ -148,7 +160,11 @@ function App() {
             </div>
           </div>
         </div>
-        <img className="absolute -z-1 ml-[90px] lg:ml-[806px] -mt-64" src={img6} alt="" />
+        <img
+          className="absolute -z-1 ml-[90px] lg:ml-[806px] -mt-64"
+          src={img6}
+          alt=""
+        />
       </section>
 
       <h1 className="text-[20px] lg:text-[28px] w-9/10 lg:w-3/5 mt-10 mx-auto">
@@ -179,30 +195,38 @@ function App() {
         <img className="absolute -z-1 lg:-ml-56 -mt-60" src={img7} alt="" />
       </section>
 
-      <section className="w-9/10 lg:w-6/10 m-auto my-10 mb-32 lg:mb-60 flex flex-wrap lg:flex-nowrap justify-between gap-10">
+      <section className="w-9/10 lg:w-6/10 m-auto my-10 mb-32 lg:mb-60 flex flex-wrap lg:flex-nowrap  gap-10">
         <div className="bg-[#F0F9FF] border w-[150px] lg:w-[190px] h-[150px] lg:h-[190px] border-[#6091B1] rounded-2xl text-center p-5 ">
-          <p className="text-[#6091B1] text-[20px] lg:text-[64px] font-bold ">72</p>
+          <p className="text-[#6091B1] text-[20px] lg:text-[64px] font-bold ">
+            72
+          </p>
           <p className="text-[#6091B1] text-[12px]">
             кресла только <br /> бизнес-класса
           </p>
         </div>
 
         <div className="bg-[#F0F9FF] border w-[150px] lg:w-[190px] h-[150px] lg:h-[190px] border-[#6091B1] rounded-2xl text-center p-5 ">
-          <p className="text-[#6091B1] text-[20px] lg:text-[64px] font-bold ">850</p>
+          <p className="text-[#6091B1] text-[20px] lg:text-[64px] font-bold ">
+            850
+          </p>
           <p className="text-[#6091B1] text-[12px]">
             км/ч - Средняя <br /> крейсерская скорость
           </p>
         </div>
 
         <div className="bg-[#F0F9FF] border w-[150px] lg:w-[190px] h-[150px] lg:h-[190px] border-[#6091B1] rounded-2xl text-center p-5 ">
-          <p className="text-[#6091B1] text-[20px] lg:text-[64px] font-bold ">18</p>
+          <p className="text-[#6091B1] text-[20px] lg:text-[64px] font-bold ">
+            18
+          </p>
           <p className="text-[#6091B1] text-[12px]">
             видов горячих и <br /> холодных блюд
           </p>
         </div>
 
         <div className="bg-[#F0F9FF] border w-[150px] lg:w-[190px] h-[150px] lg:h-[190px] border-[#6091B1] rounded-2xl text-center p-5 ">
-          <p className="text-[#6091B1] text-[20px] lg:text-[64px] font-bold ">5</p>
+          <p className="text-[#6091B1] text-[20px] lg:text-[64px] font-bold ">
+            5
+          </p>
           <p className="text-[#6091B1] text-[12px]">
             бортпроводников - по 1 <br /> на 14 пассажиров
           </p>
@@ -210,8 +234,16 @@ function App() {
       </section>
 
       <section className="px-[5%] lg:px-[20%] py-10 lg:py-[14vh]  lg:my-20 bg-[#3E403B]">
-        <img className="absolute lg:-ml-14 -ml-[25px] -mt-[118px] lg:-mt-[270px]" src={img8} alt="" />
-        <img className="absolute -mt-[50px] lg:-mt-[130px] ml-[50px] lg:ml-32 z-1 lg:w-auto w-6/10" src={img9} alt="" />
+        <img
+          className="absolute lg:-ml-14 -ml-[25px] -mt-[118px] lg:-mt-[270px]"
+          src={img8}
+          alt=""
+        />
+        <img
+          className="absolute -mt-[50px] lg:-mt-[130px] ml-[50px] lg:ml-32 z-1 lg:w-auto w-6/10"
+          src={img9}
+          alt=""
+        />
 
         <div className="flex flex-col gap-8">
           <p className="relative z-2 text-2xl lg:text-3xl text-white ">
@@ -535,9 +567,9 @@ function App() {
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-[#FE9A4C] rounded-full"></div>
             <p>
-              услуга платная, актуальные цены указаны на
-              <span className="text-[#FE9A4C] font-bold">
-                сайте перевозчика
+              услуга платная, актуальные цены указаны на 
+               <span className="text-[#FE9A4C] font-bold pl-2">
+                 сайте перевозчика
               </span>
               ;
             </p>
@@ -555,9 +587,9 @@ function App() {
             <div className="w-2 h-2 bg-[#FE9A4C] rounded-full"></div>
             <p>
               необходимы
-              <span className="text-[#FE9A4C] font-bold">документы</span> для
+              <span className="text-[#FE9A4C] font-bold pl-2">документы</span> для
               животного и
-              <span className="text-[#FE9A4C] font-bold">сертификаты</span> о
+              <span className="text-[#FE9A4C] font-bold pl-2">сертификаты</span> о
               его здоровье;
             </p>
           </div>
@@ -586,13 +618,13 @@ function App() {
           туру. Мы свяжемся с вами в ближайшее время!
         </p>
 
-        <form>
+        <form className="text-white">
           <div className="flex flex-col py-2">
             <p className="text-[#FE9A4C] text-[18px] font-semibold py-2 ">
               Имя
             </p>
             <input
-              className="border border-[#8C8F87] placeholder:text-[#8C8F87] p-2.5 rounded-[8px] "
+              className="border border-[#8C8F87] placeholder:text-[#8C8F87] p-2.5 rounded-[8px] outline-none"
               type="text"
               placeholder="Как к вам обращаться?"
             />
@@ -606,7 +638,7 @@ function App() {
               <img src={img19} alt="" />
               <p className="text-white">+7</p>
               <input
-                className=" placeholder:text-[#8C8F87]"
+                className=" placeholder:text-[#8C8F87] outline-none"
                 type="text"
                 placeholder="(xxx) xxx-xx-xx"
               />
@@ -618,7 +650,7 @@ function App() {
               Ваши пожелания
             </p>
             <textarea
-              className="max-w-full min-h-[150px] max-h-[150px] placeholder:text-[#8C8F87] border border-[#8C8F87] p-2.5 rounded-[8px] flex gap-2 items-center "
+              className="max-w-full min-h-[150px] max-h-[150px] placeholder:text-[#8C8F87] border border-[#8C8F87] p-2.5 rounded-[8px] flex gap-2 items-center outline-none"
               type="text"
               placeholder="Опишите ваше идеальное путешествие"
             ></textarea>
