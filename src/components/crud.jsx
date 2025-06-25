@@ -277,18 +277,18 @@ const Crud = () => {
               className="flex flex-col justify-between w-[250px] basis-auto grow-0 shrink-0 rounded p-5 whitespace-normal m-1 relative"
             >
               <div>
-                <span
-                  className={`px-2 py- rounded absolute right-3  ${
+                <span onClick={() => changeCheck(e)}
+                  className={`px-2 py- rounded absolute right-3 cursor-pointer  ${
                     e.status
                       ? "bg-green-50 text-green-500"
                       : "bg-red-50 text-red-500"
                   }`}
                 >
-                  <input
+                  {/* <input
                     type="checkbox"
                     onClick={() => changeCheck(e)}
                     checked={e.status}
-                  />{" "}
+                  /> */}
                   {e.status ? "Active" : "Inactive"}
                 </span>
                 <img
