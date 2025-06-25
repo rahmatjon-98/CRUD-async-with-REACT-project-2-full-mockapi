@@ -1,0 +1,26 @@
+.bgimage {
+    background-image: url('./assets/image5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.bglinegradient {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.81%, rgba(0, 0, 0, 0.48) 91.72%);
+
+}
+
+.overHidden::-webkit-scrollbar{
+    display: none;
+    background-color: #0000004f;
+}
+
+@media (max-width:1000px){
+    .bgimage{
+        background-position: center;
+        background-size: cover;
+    }
+}
